@@ -1,0 +1,16 @@
+.container-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  padding: 20px 0;
+
+  /* background-color: #b8cad4; */
+  /*width: 1024px;*/
+}
+
+.container-tittle h1,
+p {
+  font-family: 'Ranchers', cursive;
+}
