@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  list-style: none;
+}
+.pagination li + li {
+  margin-left: 1rem;
+}
+
+button {
+  width: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.pagination__item--active {
+  background: none;
+  font-weight: bold;
+  border: none;
+  color: blue;
+}
+
+.pagination__item--active:focus {
+  outline: none;
+}
+
+.button-nav {
+  width: 100px;
+  padding: 5px;
+}

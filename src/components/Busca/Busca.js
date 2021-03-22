@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import useDebounce from '../utils/useDebounce'
 import './Busca.css'
 
 const Busca = ({ value, onChange }) => {
+  const [displayValue, setDisplayValue] = useState(value)
+  const deboucedChange = useDebounce(onChange, 500)
+
   function handleChange(event) {
-    onChange(event.target.value)
+    setDisplayValue(event.target.value)
+    deboucedChange(event.target.value)
   }
 
   return (
@@ -12,7 +17,7 @@ const Busca = ({ value, onChange }) => {
         <input
           className="input-busca"
           type="search"
-          value={value}
+          value={displayValue}
           onChange={handleChange}
         />
       </div>

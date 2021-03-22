@@ -8,3 +8,9 @@
 .animes-list img {
   max-width: 100%;
 }
+span {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
